@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_datepicker/datepicker.dart';
 
-void main() => runApp(FirstDayOfWeek());
+void main() => runApp(const FirstDayOfWeek());
 
 class FirstDayOfWeek extends StatelessWidget {
+  const FirstDayOfWeek({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -13,7 +15,7 @@ class FirstDayOfWeek extends StatelessWidget {
           margin: const EdgeInsets.fromLTRB(50, 150, 50, 150),
           child: SfDateRangePicker(
             monthViewSettings:
-                DateRangePickerMonthViewSettings(firstDayOfWeek: 3),
+            const DateRangePickerMonthViewSettings(firstDayOfWeek: 3),
           ),
         ),
       ),
